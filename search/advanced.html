@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>Advanced search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!--Header section-->
+        <header>
+            <nav>
+                <div class="flex-container">
+                    <ul class="nav-buttons">
+                        <li><a href="./index.html">Google Search</a></li>
+                    </ul>    
+                </div>
+            </nav>
+        </header>    
+    <!--Main section-->    
+        <section class="content" id="advanced">
+            <div id="advanced__container" >
+                Advanced search
+            </div>
+            <div style="border-bottom: 1px solid #ebebeb;"></div>
+            <div id="form__container">
+                <form action="https://www.google.com/search">
+                    <div id="advanced__form">
+                        <div class="row">
+                            <div style="font-size: 16px;"><strong>Find pages with...</strong></div><br><br>
+                            <div class="label">
+                                all these words:
+                            </div>
+                            <div>
+                                <input type="text" name="as_q" autocomplete="off">
+                            </div>
+                            <div class="label">
+                                this exact word or phrase:
+                            </div>
+                            <div>
+                                <input type="text" name="as_epq" autocomplete="off">
+                            </div>  
+                            <div class="label">
+                                any of these words:
+                            </div>
+                            <div>
+                                <input type="text" name="as_oq" autocomplete="off">
+                            </div>
+                            <div class="label">
+                                none of these words:
+                            </div>
+                            <div>
+                                <input type="text" name="as_eq" autocomplete="off">
+                            </div>
+                        </div>
+                        <div id="advanced__search__button">
+                            <input type="submit" value="Google Advanced Search">
+                        </div>
+                    </div>
+                    <input type="hidden"  name="as_qdr" value="all">
+                    <input type="hidden"  name="as_occt" value="any">
+                    <input type="hidden"  name="safe" value="images">
+                    
+                </form>
+            </div>  
+        </section>
+        
+    </body>
+</html>
